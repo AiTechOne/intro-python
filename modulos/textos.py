@@ -17,10 +17,14 @@
 # mensaje = 'Hola Mundo en comillas simples'
 # mensaje = """Hola Mundo en triple-comillas dobles"""
 # mensaje = '''Hola Mundo en triple-comillas simples'''
+# mensaje = "Hola esta es la linea 1\nEsta es la linea dos\nEsta es la linea 3"
+# mensaje = """Hola esta es la linea 1
+# Esta es la linea dos
+# Esta es la linea 3"""
+
 # mensaje = """Esta es la ventaja
 # de las comillas
-# triples (dobles o simples)
-# """
+# triples (dobles o simples)"""
 # print(mensaje)
 
 
@@ -33,26 +37,30 @@
 # Letra numero 100 (no existe!!)
 # print(var[100])
 # Conjunto de letras: del 0 al 6 (al 5 realmente)
-# print(var[0:6])
+# print(var[:6])
 # Conjunto de letras: del 6 en adelante! (hasta el final)
 # print(var[6:])
 # Conjunto de letras: Igual que antes pero saltando el espacio:
 # print(var[7:])
 # imprimir desde el final hacia adelante:
-#print(var[-6:])
+# print(var[-6:])
 
 # Almacenar substrings:
-# nombre = var[0:6]
+# nombre = var[:6]
 # apellido = var[7:]
 # print(nombre)
 # print(apellido)
 
-
 # Len => lenght que es largo en ingles:
-# texto = "este texto tiene muchas letras y no sabemos cuantas realmente son"
-# print(texto)
-# largo_texto = len(texto)
-# print(largo_texto)
+# texto1 = "este texto tiene muchas letras y no sabemos cuantas realmente son"
+# texto2 = "este texto tiene muchas dsadsa y no sabemos cuantas gfdgfdtretre son"
+# texto3 = "gfdgfdgfdgfd texto ewqewqewqewq muchas letras y no sabemos cuantas realmente son"
+# largo_texto1 = len(texto1)
+# largo_texto2 = len(texto2)
+# largo_texto3 = len(texto3)
+# print(largo_texto1, largo_texto2, largo_texto3)
+# print(largo_texto2)
+# print(largo_texto3)
 
 
 ### Metodos especiales para strings:
@@ -72,10 +80,11 @@
 # texto = "Mi nombre es Felipe cosas varias"
 # indice = texto.find("Felipe")
 # print(indice)
-# nombre = texto[:indice]
+# nombre = texto[indice:]
 # print(nombre)
 # Indice de algo que no existe = -1
-# indice = texto.find("Tejada")
+# indice = texto.find("Felipe")
+# print(indice)
 # if indice >= 0:
 #     print(texto[indice:])
 # else:
@@ -110,8 +119,8 @@
 
 
 ### Sumar strings:
-# string_1 = "felipe"
-# string_2 = "tejada"
+string_1 = "Wladimir"
+string_2 = "tejada"
 # suma_strings = string_1 + string_2
 # print(suma_strings)
 
@@ -121,8 +130,13 @@
 # suma_strings_2 = "Bienvenido " + string_1.capitalize() + " " + string_2.capitalize()
 # print(suma_strings_2)
 
-# metodo_especial = f"Bienvenido {string_1} {string_2}"
+# metodo_especial = f"Bienvenido {string_1} {string_2} que tal"
 # print(metodo_especial)
+
+# print(f"La variable string_1 es: {string_1}")
+# largo_str1 = len(string_1)
+# print(f"El largo del string_1 es: {largo_str1}")
+
 # print(f"Bienvenido {string_1} {string_2}")
 
 # metodo_especial = "Bienvenido {} {} {}".format(string_1, string_2, "otra variable")
@@ -147,15 +161,21 @@
 # print(auxiliar)
 
 # Ejemplo para cambiar todas las letras p de texto en mayusculas:
-# texto_nuevo = ""
-# for caracter in texto:
-#     if caracter == "p":
-#         # texto_nuevo = texto_nuevo + "P"
-#         # texto_nuevo = texto_nuevo + caracter.capitalize()
-#         texto_nuevo = texto_nuevo + caracter.upper()
-#     else:
-#         texto_nuevo = texto_nuevo + caracter
-# print(f"El texto nuevo es: {texto_nuevo}")
+texto = "Felipe Tejada"
+texto_nuevo = ""
+for caracter in texto:
+    if caracter == "e":
+        texto_nuevo += "i"
+    elif caracter == "a":
+        texto_nuevo += "i"
+        # texto_nuevo = texto_nuevo + "P"
+        # texto_nuevo = texto_nuevo + caracter.capitalize()
+        # texto_nuevo = texto_nuevo + caracter.upper()
+    else:
+        texto_nuevo = texto_nuevo + caracter
+print(f"El texto nuevo es: {texto_nuevo}")
+
+texto.replace('a', 'i')
 
 
 ### OJO: textos pueden tener numeros, pero estos no se pueden sumar matematicamente! se suman como texto:
