@@ -4,8 +4,9 @@
 
 # Pista: Concatena las palabras en una variable de tipo string para poder utilizar metodos como
 # string.lower() y string.find('algo')
+
 palabras = ['esTas', 'PalabraS', 'estan', 'EsCRiTaS', 'coN', 'MayUscuLAS',
             'Y', 'MinusCulas,', 'cUanDo', 'SolAMENte', 'deBeRÍaN', 'SER',
             'MayuscuLas', 'Las', 'PrimeRas', 'DesPues', 'de', 'UN', 'Punto.',
-            'ArrEGla', 'EsTE', 'TeXTo', 'bueN', 'capAtiano', 'bueNa', 'suertE!']
+            'ArrEGla', 'EsTE', 'TeXTo', 'bueN', 'capAtiano.', 'bueNa', 'suertE!']
 

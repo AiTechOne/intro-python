@@ -10,4 +10,3 @@ palabras = ['Estas', 'palabras', 'estan', 'almacenadas', 'en', 'una', 'lista', '
             'solo', 'contiene', 'strings', ".", 'Debes', 'sumar', 'cada', 'una', 'de', 'estas',
             'para', 'poder', 'generar', 'un', 'string', 'que', 'tenga', 'sentido', "!",
             'Buena', 'suerte', 'captiano', ':)']
-

@@ -38,6 +38,17 @@
 # op = a % b
 # print(f"El modulo de {b} de {a} es {op} y el tipo de dato de este resultado es {type(op)}")
 
+# a = 7
+
+# if a%2 == 0:
+#     print("Numero es par")
+# else:
+#     print("Numero es impar")
+
+# if a%2 == 1:
+#     print("Numero es impar")
+# else:
+#     print("Numero es par")
 
 # print("Numeros decimales!")
 # ####
