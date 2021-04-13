@@ -3,3 +3,10 @@
 # que el usuario quiera agregar es indeterminada, por lo que tienen que aplicar un loop.
 # Al finalizar, el código debe imprimir toda la lista.
 
+cosas = []
+print(cosas)
+
+var = input("Ingresa algo: ")
+cosas.append(var)
+print(cosas)
+

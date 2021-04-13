@@ -22,28 +22,33 @@ divisor = [5,4,0,2,1,0,7,5,0,2,1,3,4,60,7,8,9,0,0,1.5]
 # Finalmente, imprimir todos los resultados utilizando un ciclo for y f-strings como:
 # 'La división entre <x> y <y> es igual a <z>'
 
-
-cocientes = []
-# Forma 1: con un ciclo for
-for i in range(len(dividendos)):
-    if divisor[i] == 0:
-        cocientes.append("Indeterminado")
-    else:
-        resultado_auxiliar = round( dividendos[i] / divisor[i], 2)
-        cocientes.append(resultado_auxiliar)
-
-    # print(i)
-    # print(f"Dividendo = {dividendos[i]}")
-    # print(f"Divisor = {divisor[i]}")
-    # print(f"Cociente = {dividendos[i] / divisor[i]}")
-    # print("")
-
+# Forma optimizada:
 resultados = []
 for i in range(len(dividendos)):
-    resultados.append([dividendos[i], divisor[i], cocientes[i]])
-    print(f"La división entre {dividendos[i]} y {divisor[i]} es igual a {cocientes[i]}")
+    if divisor[i] == 0:
+        z = "Indeterminado"
+    else:
+        z = round( dividendos[i] / divisor[i], 2)
+    resultados.append([dividendos[i], divisor[i], z])
+    print(f"La división entre {dividendos[i]} y {divisor[i]} es igual a {z}")
 
-# print(resultados)
 
-for dividendo in dividendos:
-    print(dividendo)
+# # Forma simple con 2 for:
+# cocientes = []
+# for i in range(len(dividendos)):
+#     if divisor[i] == 0:
+#         cocientes.append("Indeterminado")
+#     else:
+#         resultado_auxiliar = round( dividendos[i] / divisor[i], 2)
+#         cocientes.append(resultado_auxiliar)
+
+#     # print(i)
+#     # print(f"Dividendo = {dividendos[i]}")
+#     # print(f"Divisor = {divisor[i]}")
+#     # print(f"Cociente = {dividendos[i] / divisor[i]}")
+#     # print("")
+
+# resultados = []
+# for i in range(len(dividendos)):
+#     resultados.append([dividendos[i], divisor[i], cocientes[i]])
+#     print(f"La división entre {dividendos[i]} y {divisor[i]} es igual a {cocientes[i]}")

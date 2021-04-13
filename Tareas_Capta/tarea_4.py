@@ -13,3 +13,6 @@ edades = [19, 17, 24, 25, 26, 28]
 usa_lentes = [False, False, False, False, True, True]
 tiene_licencia = [False, False, True, False, False, False]
 meses_en_capta = [3, 2, 1, 5, 5, 36]
+
+# for i in range(len(lista_electrica)):
+    # print(f"El sr. {} de {} de edad, lleva trabajando {} meses en Capta Hydro SPA.")
