@@ -1,27 +1,29 @@
 ## Inspeccionando el modulo datetime:
 # import datetime
 
-# La funcion dir entrega todas las propiedades de un objeto. Estas propiedades pueden ser variables
-# (string, int, listas, etc), otros objetos, y funciones o métodos.
+# # La funcion dir entrega todas las propiedades de un objeto. Estas propiedades pueden ser variables
+# # (string, int, listas, etc), otros objetos, y funciones o métodos.
 # print("Contenido del modulo datetime (funcion dir): ", dir(datetime))
-# print(type(datetime.MAXYEAR))
-# print(datetime.MAXYEAR)
-# print(datetime.MINYEAR)
+# # print(type(datetime.MAXYEAR))
+# # print(datetime.MAXYEAR)
+# # print(datetime.MINYEAR)
 
 # print("\n")
 # print("Contenido del submodulo datetime: ",dir(datetime.datetime))
+
 # print(datetime.datetime.now())
 
-# print("\n")
+# # print("\n")
 # print("Contenido del submodulo timedelta: ",dir(datetime.timedelta))
 
 
 ###############################
 # Comentar el primer import de datetime para no tener problemas de aqui en adelante:
-from datetime import datetime as dt
+# from datetime import datetime as dt
 
-# Recordando lo visto en la clase modulos:
+# # Recordando lo visto en la clase modulos:
 # fecha_hora = dt.now()
+# print(f"El tipo de objeto de fecha_hora es: {type(fecha_hora)}")
 # print("Objeto datetime fecha_hora es:", fecha_hora)
 # print("Año: ",fecha_hora.year)
 # print("Mes: ",fecha_hora.month)
@@ -35,6 +37,7 @@ from datetime import datetime as dt
 # # Timestamp es una estampa de tiempo, equivalente a datetime, solo que entrega la fecha y hora como un decimal
 # # que equivale a la cantidad de segundos desde "el inicio de la programacion" (por decirlo de un modo simplificado)
 # import time
+# from datetime import datetime as dt
 
 # timestamp = time.time()
 # print("El timestamp es:", timestamp)
@@ -44,10 +47,13 @@ from datetime import datetime as dt
 # timestamp_a_dt = dt.fromtimestamp(timestamp)
 # print("El timestamp_a_dt es: ", timestamp_a_dt)
 
+# timestamp_a_dt = dt.fromtimestamp(0)
+# print("El timestamp_a_dt es: ", timestamp_a_dt)
 
 
 #################
 # Transformar un objeto datetime en un string con un formato especial que nos sirva para nuestra aplicación
+# from datetime import datetime as dt
 
 # fechahora_actual = dt.now()
 # print("Fecha y hora actual: ",fechahora_actual)
@@ -63,9 +69,6 @@ from datetime import datetime as dt
 
 # fecha_y_dia = fechahora_actual.strftime("%A, %d-%m-%Y")
 # print("fecha_y_dia es: ",fecha_y_dia)
-
-# fecha_y_zona_horaria = fechahora_actual.strftime("%d-%m-%Y %Z")
-# print("fecha_y_zona_horaria es: ",fecha_y_zona_horaria)
 
 # fecha_hora_utc = dt.utcnow()
 # print("fecha_hora_utc es: ",fecha_hora_utc)
@@ -94,17 +97,18 @@ from datetime import datetime as dt
 
 #################
 # Transformar un string en un objeto datetime para poder utilizar las propiedades de un objeto datetime
-# string_fecha = "06-20-20"
+from datetime import datetime as dt
+string_fecha = "06/02/2020"
 
-# print("string_fecha es: ",string_fecha)
-# print("El tipo de dato de string_fecha es: ",type(string_fecha))
-# print("")
+print("string_fecha es: ",string_fecha)
+print("El tipo de dato de string_fecha es: ",type(string_fecha))
+print("")
 
-# # Crear objeto dt:
-# nuevo_objeto_dt = dt.strptime(string_fecha, "%m-%d-%y")
-# print("Objeto datetime con fecha de string fecha: ",nuevo_objeto_dt)
-# print("Tipo de dato de nuevo_objeto_dt: ",type(nuevo_objeto_dt))
+# Crear objeto dt:
+nuevo_objeto_dt = dt.strptime(string_fecha, "%m/%d/%Y")
+print("Objeto datetime con fecha de string fecha: ",nuevo_objeto_dt)
+print("Tipo de dato de nuevo_objeto_dt: ",type(nuevo_objeto_dt))
 
-# print("El año del nuevo_objeto_dt es: ", nuevo_objeto_dt.year)
-# print("El mes del nuevo_objeto_dt es: ", nuevo_objeto_dt.month)
-# print("El dia del nuevo_objeto_dt es: ", nuevo_objeto_dt.day)
+print("El año del nuevo_objeto_dt es: ", nuevo_objeto_dt.year)
+print("El mes del nuevo_objeto_dt es: ", nuevo_objeto_dt.month)
+print("El dia del nuevo_objeto_dt es: ", nuevo_objeto_dt.day)

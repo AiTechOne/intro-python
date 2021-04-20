@@ -33,5 +33,3 @@ diccionario = {
         }
     }
 }
-
-print(diccionario["alumnos"]["Jose"]["notas"]["historia"])

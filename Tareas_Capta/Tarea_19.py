@@ -7,35 +7,33 @@ tiene_licencia = [False, False, True, False, False, False]
 meses_en_capta = [3, 2, 1, 5, 5, 36]
 
 # El diccionario debe tener la info de cada uno de los miembros, de tal forma que si se pregunta:
-# diccionario["Lavado"] esto entregue un diccionario con la edad, si usa lentes, tiene licencia 
-# # y los meses en capta
+# diccionario["Lavado"] esto entregue un diccionario con la edad, si usa lentes, tiene licencia
+# y los meses en capta
 
 # Al terminar, printea el diccionario completo
 
-captianos_electricos = {}
-for i in range(len(lista_electrica)):
-    captianos_electricos[lista_electrica[i]] = {}
-    captianos_electricos[lista_electrica[i]]["edad"] = edades[i]
-    captianos_electricos[lista_electrica[i]]["usa_lentes"] = usa_lentes[i]
-    captianos_electricos[lista_electrica[i]]["tiene_licencia"] = tiene_licencia[i]
-    captianos_electricos[lista_electrica[i]]["meses_en_capta"] = meses_en_capta[i]
+# diccionario = {}
+# diccionario["lavado"] = {}
+# diccionario["lavado"]["edad"] = edades[0]
+# diccionario["lavado"]["usa_lentes"] = usa_lentes[0]
+# diccionario["lavado"]["tiene_licencia"] = tiene_licencia[0]
 
-# print(captianos_electricos)
+# diccionario["arredondo"] = {}
+# diccionario["arredondo"]["edad"] = edades[1]
+# diccionario["arredondo"]["usa_lentes"] = usa_lentes[1]
+# diccionario["arredondo"]["tiene_licencia"] = tiene_licencia[1]
 
-print(captianos_electricos["Arredondo"])
+# diccionario["basilio"] = {}
+# diccionario["basilio"]["edad"] = edades[2]
+# diccionario["basilio"]["usa_lentes"] = usa_lentes[2]
+# diccionario["basilio"]["tiene_licencia"] = tiene_licencia[2]
 
+diccionario = {}
+for indice in range(len(lista_electrica)):
+    diccionario[ lista_electrica[indice] ] = {}
+    diccionario[ lista_electrica[indice] ]["edad"] = edades[indice]
+    diccionario[ lista_electrica[indice] ]["usa_lentes"] = usa_lentes[indice]
+    diccionario[ lista_electrica[indice] ]["tiene_licencia"] = tiene_licencia[indice]
+    diccionario[ lista_electrica[indice] ]["meses_en_capta"] = meses_en_capta[indice]
 
-dicc = {
-    "Lavado": {
-        "edad": edades[0],
-        "usa_lentes": usa_lentes[0]
-    },
-    "Arredondo":{
-        "edad": edades[1],
-        "usa_lentes": usa_lentes[1]
-    },
-    "Basilio":{
-        "edad": edades[2],
-        "usa_lentes": usa_lentes[2]
-    }
-}
+# print(diccionario)
