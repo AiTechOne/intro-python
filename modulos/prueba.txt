@@ -1,0 +1,9 @@
+Este es un archivo de prueba del area electrica!
+tiene pocas lineas. Esta es la 2
+Esta es la 3
+Esta es la 4
+
+La linea anterior estaba vacia!
+Esta no
+Esta tampoco
+Este es el final

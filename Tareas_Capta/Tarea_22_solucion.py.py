@@ -12,3 +12,7 @@ original = {
 }
 
 llaves_a_eliminar = ["nota", "ciudad", "direccion"]
+
+for por_eliminar in llaves_a_eliminar:
+    original.pop(por_eliminar)
+print(original)
