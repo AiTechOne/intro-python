@@ -13,10 +13,10 @@
 # del archivo. Después les explicaré mejor esta parte.
 
 # 1. Uso metodo open para guardar todo el texto del archivo en una variable llamada 'texto_archivo'
-nombre_archivo_a_abrir = 'prueba.txt'
-with open(nombre_archivo_a_abrir, mode='r') as archivo:
-    texto_archivo = archivo.read()
-print(texto_archivo)
+# nombre_archivo_a_abrir = 'prueba.txt'
+# with open(nombre_archivo_a_abrir, mode='r') as archivo:
+#     texto_archivo = archivo.read()
+# print(texto_archivo)
 
 # # 2. Uso del método open para leer una linea( del archivo (la primera)
 # nombre_archivo_a_abrir = 'prueba.txt'
@@ -31,14 +31,17 @@ print(texto_archivo)
 # ################
 # # Escribir archivos: similar a lo anterior, ahora cambiaremos el mode a 'w' o 'a'.
 
-# # 1. Crear un archivo: este codigo crea un nuevo archivo y le escribe el texto de la variable "texto_a_guardar"
+# 1. Crear un archivo: este codigo crea un nuevo archivo y le escribe el texto de la variable "texto_a_guardar"
 # nombre_nuevo_archivo = 'nuevo_archivo.txt'
 # texto_a_guardar = f'Esta es una linea de texto que sera almacenada en el archivo {nombre_nuevo_archivo}'
-# with open(nombre_nuevo_archivo, 'w') as nuevo_archivo:
+# with open(nombre_nuevo_archivo, mode='w') as nuevo_archivo:
 #     nuevo_archivo.write(texto_a_guardar)
+
+# with open(nombre_nuevo_archivo, mode='r') as nuevo_archivo:
+    # print(nuevo_archivo.read())
 
 # # 2. Agregar elementos a un archivo:
 # nombre_nuevo_archivo = 'nuevo_archivo.txt'
-# texto_a_Agregar = f'Esta es una NUEVA linea de texto que sera almacenada en el archivo {nombre_nuevo_archivo}'
-# with open(nombre_nuevo_archivo, 'w') as nuevo_archivo:
+# texto_a_Agregar = f'Esta es una DSADSADAS linea de texto que sera almacenada en el archivo {nombre_nuevo_archivo}\n'
+# with open(nombre_nuevo_archivo, mode='a') as nuevo_archivo:
 #     nuevo_archivo.write(texto_a_Agregar)

@@ -13,6 +13,21 @@ original = {
 
 llaves_a_eliminar = ["nota", "ciudad", "direccion"]
 
-for por_eliminar in llaves_a_eliminar:
-    original.pop(por_eliminar)
+for llave in llaves_a_eliminar:
+    print("Eliminando llave", llave)
+    original.pop(llave)
 print(original)
+
+# n = 0
+# while n < len(llaves_a_eliminar):
+#     print("Eliminando llave", llaves_a_eliminar[n])
+#     original.pop(llaves_a_eliminar[n])
+#     n+=1
+# print(original)
+
+# while len(llaves_a_eliminar) > 0 :
+#     print("Eliminando llave", llaves_a_eliminar[-1])
+#     original.pop(llaves_a_eliminar[-1])
+#     llaves_a_eliminar.pop()
+#     print(llaves_a_eliminar)
+# print(original)
